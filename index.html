@@ -1,50 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>COMP2804 Grade Calculator</title>
-        <meta name="description" content="Fall 2024 with Patrick Morin" />
-        <meta property="og:title" content="COMP2804 Grade Calculator" />
-        <meta property="og:description" content="Fall 2024 with Patrick Morin" />
+        <title>Grade Calculator</title>
+        <meta name="description" content="For COMP Courses" />
+        <meta property="og:title" content="Grade Calculator" />
+        <meta property="og:description" content="For COMP Courses Fall 2024" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
     </head>
-    <body>
-        <form>
-            <h1>COMP2804 Grade Calculator</h1>
-            <p>Enter your grades below:</p>
-            <label for="a1">Assignment 1:</label>
-            <input type="number" id="a1" name="a1" id="a1" min="0" max="100" />
-            <label for="a2">Assignment 2:</label>
-            <input type="number" id="a2" name="a2" id="a2" min="0" max="100" />
-            <label for="a3">Assignment 3:</label>
-            <input type="number" id="a3" name="a3" id="a3" min="0" max="100" />
-            <label for="a4">Assignment 4:</label>
-            <input type="number" id="a4" name="a4" id="a4" min="0" max="100" />
-            <label for="midterm">Midterm:</label>
-            <input type="number" id="midterm" name="midterm" id="midterm" min="0" max="100" />
-            <label for="final">Final:</label>
-            <input type="number" id="final" name="final" id="final" min="0" max="100" />
-            <button type="submit" id="calculate">Calculate</button>
-        </form>
-
-        <section id="results" class="hidden">
-            <h2>Your Results</h2>
-            <p>You completed coursework worth <span id="completed">0</span>% of the entire course.</p>
-            <p>Out of that, you achieved <span id="earned">0</span>%.</p>
-            <p>This makes your current grade <span id="current">0</span>%.</p>
-            <p>Here's what you need on the rest of the course to end with a good grade:</p>
-            <div id="grades-needed">
-                <p>[A-]: <span id="a-minus">0</span>%</p>
-                <p>[A]: <span id="a">0</span>%</p>
-                <p>[A+]: <span id="a-plus">0</span>%</p>
-            </div>
-            <div id="copy-link-container">
-                <p>Use the link below to automatically fill in your grades:</p>
-                <input readonly type="text" id="copy-link" onfocus="this.select()" />
-            </div>
-        </section>
-
-        <script src="script.js"></script>
+    <body class="home">
+        <main>
+            <h1>Grade Calculator</h1>
+            <p>Available Courses:</p>
+            <ul>
+                <li><a href="./comp2402">COMP2402</a></li>
+                <li><a href="./comp2404">COMP2404</a></li>
+                <li><a href="./comp2804">COMP2804</a></li>
+            </ul>
+        </main>
     </body>
 </html>

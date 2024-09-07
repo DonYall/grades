@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>COMP2404 Grade Calculator</title>
+        <meta name="description" content="Fall 2024 with Darryl Hill" />
+        <meta property="og:title" content="COMP2404 Grade Calculator" />
+        <meta property="og:description" content="Fall 2024 with Darryl Hill" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="../style.css" />
+    </head>
+    <body>
+        <form>
+            <h1>COMP2404 Grade Calculator</h1>
+            <p>Enter your grades below. Enter -1 to manually indicate a dropped tutorial.</p>
+            <label for="t1">Tutorial 1:</label>
+            <input type="number" id="t1" name="t1" id="t1" min="0" max="100" />
+            <label for="t2">Tutorial 2:</label>
+            <input type="number" id="t2" name="t2" id="t2" min="0" max="100" />
+            <label for="t3">Tutorial 3:</label>
+            <input type="number" id="t3" name="t3" id="t3" min="0" max="100" />
+            <label for="t4">Tutorial 4:</label>
+            <input type="number" id="t4" name="t4" id="t4" min="0" max="100" />
+            <label for="t5">Tutorial 5:</label>
+            <input type="number" id="t5" name="t5" id="t5" min="0" max="100" />
+            <label for="t6">Tutorial 6:</label>
+            <input type="number" id="t6" name="t6" id="t6" min="0" max="100" />
+            <label for="t7">Tutorial 7:</label>
+            <input type="number" id="t7" name="t7" id="t7" min="0" max="100" />
+            <label for="t8">Tutorial 8:</label>
+            <input type="number" id="t8" name="t8" id="t8" min="0" max="100" />
+            <label for="t9">Tutorial 9:</label>
+            <input type="number" id="t9" name="t9" id="t9" min="0" max="100" />
+            <label for="t10">Tutorial 10:</label>
+            <input type="number" id="t10" name="t10" id="t10" min="0" max="100" />
+            <label for="a1">Assignment 1:</label>
+            <input type="number" id="a1" name="a1" id="a1" min="0" max="100" />
+            <label for="a2">Assignment 2:</label>
+            <input type="number" id="a2" name="a2" id="a2" min="0" max="100" />
+            <label for="a3">Assignment 3:</label>
+            <input type="number" id="a3" name="a3" id="a3" min="0" max="100" />
+            <label for="a4">Assignment 4:</label>
+            <input type="number" id="a4" name="a4" id="a4" min="0" max="100" />
+            <label for="a5">Assignment 5:</label>
+            <input type="number" id="a5" name="a5" id="a5" min="0" max="100" />
+            <label for="midterm">Midterm:</label>
+            <input type="number" id="midterm" name="midterm" id="midterm" min="0" max="100" />
+            <label for="final">Final:</label>
+            <input type="number" id="final" name="final" id="final" min="0" max="100" />
+            <button type="submit" id="calculate">Calculate</button>
+        </form>
+
+        <section id="results" class="hidden">
+            <h2>Your Results</h2>
+            <p>You completed coursework worth <span id="completed">0</span>% of the entire course.</p>
+            <p>Out of that, you achieved <span id="earned">0</span>%.</p>
+            <p>You also achieved a bonus of <span id="bonus-earned">0</span>%.</p>
+            <p>This makes your current grade <span id="current">0</span>%.</p>
+            <p>Here's what you need on the rest of the course to end with a good grade:</p>
+            <div id="grades-needed">
+                <p>[A-]: <span id="a-minus">0</span>%</p>
+                <p>[A]: <span id="a">0</span>%</p>
+                <p>[A+]: <span id="a-plus">0</span>%</p>
+            </div>
+            <div id="copy-link-container">
+                <p>Use the link below to automatically fill in your grades:</p>
+                <input readonly type="text" id="copy-link" onfocus="this.select()" />
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
